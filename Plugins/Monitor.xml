@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<PluginData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GitHubPlugin">
+    <!-- MagnetarHub descriptor, copy it to the Plugins folder of the magnetar-hub repository when publishing.
+         Magnetar compiles the SourceDirectories below itself, from the pinned commit. The Torch build is not part of it. -->
+
+    <!-- The ID of your plugin, never change this -->
+    <Id>f58cf508-46b1-4964-9836-fd42429adbe0</Id>
+
+    <RepoId>buttheadbob/Monitor</RepoId>
+
+    <FriendlyName>Monitor</FriendlyName>
+
+    <Author>SentorX</Author>
+
+    <Tooltip>Live performance monitor, built to find the cause of lag</Tooltip>
+
+    <Description>
+Monitor measures what is hurting sim speed, including during the worst lag. It times the frame all the time, and on request it times every call, so a run names the grids, players, factions, scripts, mods and plugins that cost the most.
+
+It notices lag by itself and gathers the evidence, and players can see what their own grids cost.
+
+Commands start with !monitor. Add the Monitor Quasar plugin for history, charts, incidents and comparing servers.
+
+Also available as a Torch plugin, both builds share the same code.
+    </Description>
+
+    <SourceDirectories>
+        <Directory>src/SenX.Monitor.Magnetar</Directory>
+        <Directory>src/SenX.Monitor.Core</Directory>
+        <Directory>src/SenX.Monitor.Contracts</Directory>
+        <Directory>src/SenX.Monitor.Api</Directory>
+    </SourceDirectories>
+
+
+    <Commit>4ee125b22631377a1f8ad27da60a6d874e14a2ee</Commit>
+</PluginData>
